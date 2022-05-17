@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import * as tf from "@tensorflow/tfjs";
 import * as mobilenet from '@tensorflow-models/mobilenet'
 
@@ -7,6 +7,19 @@ export function ImageCheck() {
   const [image, setImage] = useState(null);
   const [preview, setPreview] = useState(undefined);
   const [description, setDescription] = useState(undefined);
+  const [model, setModel] = useState(undefined);
+
+  useEffect(() => {
+    // Load the model.
+    tf.loadLayersModel('https://raw.githubusercontent.com/ionutale/image-object-detection/main/public/model2/model.json')
+      .then(m => {
+        setModel(m)
+        console.log('model loaded', m)
+        model.summary()
+      })
+      .catch(err => console.error(err));
+  }, []);
+
 
    /**
  * Display the result in the page
@@ -31,13 +44,9 @@ export function ImageCheck() {
         // convert img from type File to type ImageData
       
         console.log('Classifying image...');
-        const model = await tf.loadLayersModel('https://raw.githubusercontent.com/ionutale/image-object-detection/main/public/model2/model.json');
         // const model = await tf.loadGraphModel('https://raw.githubusercontent.com/ionutale/image-object-detection/main/public/model2/model.json');
         // const model = await mobilenet.load();
-        console.log('Model loaded', model);
-        model.summary();
-
-
+  
         // const predictions = await model.predict(img).data();
         // console.log(predictions);
         // displayDescription(predictions);
