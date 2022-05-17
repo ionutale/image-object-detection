@@ -71,7 +71,8 @@
                                         "dtype": "float32",
                                         "mode": "horizontal",
                                         "seed": null,
-                                        "layers": []
+                                        "layers": [],
+                                        "input_layers": [],
                                     }
                                 },
                                 {
@@ -86,7 +87,8 @@
                                         "fill_value": 0.0,
                                         "interpolation": "bilinear",
                                         "seed": null,
-                                        "layers": []
+                                        "layers": [],
+                                        "input_layers": [],
                                     }
                                 },
                                 {
@@ -102,7 +104,8 @@
                                         "fill_value": 0.0,
                                         "interpolation": "bilinear",
                                         "seed": null,
-                                        "layers": []
+                                        "layers": [],
+                                        "input_layers": [],
                                     }
                                 }
                             ]
