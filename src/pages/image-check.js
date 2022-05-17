@@ -1,8 +1,9 @@
 import { useState } from "react";
+import * as tf from "@tensorflow/tfjs";
+
 
 export function ImageCheck() {
 
-  const [model, setModel] = useState(null);
   const [image, setImage] = useState(null);
   const [preview, setPreview] = useState(undefined);
 
@@ -24,8 +25,10 @@ export function ImageCheck() {
     /**
      * Classify with the image with the mobilenet model
      */
-    function classifyImage() {
-      model.classify(image).then((predictions) => {
+    async function classifyImage(img) {
+      const model = await tf.loadLayersModel('https://localhost:3000/model/model.json');
+
+      model.classify(img).then((predictions) => {
         displayDescription(predictions);
       });
     }
@@ -44,6 +47,7 @@ export function ImageCheck() {
       setPreview(objectUrl)
       console.log("objectUrl", objectUrl)
 
+      classifyImage(e.target.files[0]);
     }
   
     
