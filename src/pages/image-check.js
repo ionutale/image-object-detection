@@ -19,7 +19,7 @@ export function ImageCheck() {
         const probability = Math.round(result.probability * 100);
   
         // Display result
-        setDescription(`${probability}% shure this is a ${result.className.replace(',', ' or')} 🐶`);
+        setDescription(`${probability}% shure this is a ${result.className.replace(',', ' or')} `);
       } else setDescription('I am not shure what I should recognize 😢');
     }
   
