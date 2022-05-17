@@ -30,13 +30,17 @@ export function ImageCheck() {
       try {
         // convert img from type File to type ImageData
       
-        console.log('Classifying image...', mobilenet);
-        // const model = await tf.loadLayersModel('https://raw.githubusercontent.com/ionutale/image-object-detection/main/public/model/model.json');
-        const model = await mobilenet.load();
-        
-        const predictions = await model.classify(img)
-        console.log(predictions);
-        displayDescription(predictions);
+        console.log('Classifying image...');
+        const model = await tf.loadLayersModel('https://raw.githubusercontent.com/ionutale/image-object-detection/main/public/model/model.json');
+        // const model = await mobilenet.load();
+        model.summary();
+
+
+        console.log('Model loaded', model);
+
+        // const predictions = await model.predict(img).data();
+        // console.log(predictions);
+        // displayDescription(predictions);
         
       } catch (error) {
         console.log(error); 
