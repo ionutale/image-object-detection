@@ -70,7 +70,8 @@
                                         ],
                                         "dtype": "float32",
                                         "mode": "horizontal",
-                                        "seed": null
+                                        "seed": null,
+                                        "layers": []
                                     }
                                 },
                                 {
@@ -84,7 +85,8 @@
                                         "fill_mode": "reflect",
                                         "fill_value": 0.0,
                                         "interpolation": "bilinear",
-                                        "seed": null
+                                        "seed": null,
+                                        "layers": []
                                     }
                                 },
                                 {
@@ -99,7 +101,8 @@
                                         "fill_mode": "reflect",
                                         "fill_value": 0.0,
                                         "interpolation": "bilinear",
-                                        "seed": null
+                                        "seed": null,
+                                        "layers": []
                                     }
                                 }
                             ]
