@@ -42,7 +42,15 @@
                                         "dtype": "float32",
                                         "sparse": false,
                                         "ragged": false,
-                                        "name": "random_flip_2_input"
+                                        "name": "random_flip_2_input",
+                                        "outputs": [
+                                            {
+                                                "name": "random_flip_2_input_output",
+                                                "output_index": 0,
+                                                "node_index": 0,
+                                                "tensor_index": 0
+                                            }
+                                        ]
                                     }
                                 },
                                 {
