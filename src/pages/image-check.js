@@ -47,9 +47,9 @@ export function ImageCheck() {
         // const model = await tf.loadGraphModel('https://raw.githubusercontent.com/ionutale/image-object-detection/main/public/model2/model.json');
         // const model = await mobilenet.load();
   
-        // const predictions = await model.predict(img).data();
-        // console.log(predictions);
-        // displayDescription(predictions);
+         const predictions = await model.predict(img).data();
+        console.log(predictions);
+        displayDescription(predictions);
         
       } catch (error) {
         console.log(error); 

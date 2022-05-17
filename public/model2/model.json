@@ -77,7 +77,8 @@
                                         "input_names": [],
                                         "output_names": [],
                                         "node_count": 0,
-                                        "layers_by_name": {}
+                                        "layers_by_name": {},
+                                        "outputs": []
 
                                     }
                                 },
@@ -99,7 +100,8 @@
                                         "input_names": [],
                                         "output_names": [],
                                         "node_count": 0,
-                                        "layers_by_name": {}
+                                        "layers_by_name": {},
+                                        "outputs": []
 
                                     }
                                 },
@@ -122,7 +124,8 @@
                                         "input_names": [],
                                         "output_names": [],
                                         "node_count": 0,
-                                        "layers_by_name": {}
+                                        "layers_by_name": {},
+                                        "outputs": []
                                     }
                                 }
                             ]
