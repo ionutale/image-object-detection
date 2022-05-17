@@ -31,13 +31,12 @@ export function ImageCheck() {
         // convert img from type File to type ImageData
       
         console.log('Classifying image...');
-        const model = await tf.loadLayersModel('https://raw.githubusercontent.com/ionutale/image-object-detection/main/public/model2/model.json');
-        // const model = await tf.loadGraphModel('https://raw.githubusercontent.com/ionutale/image-object-detection/main/public/model/model.json');
+        // const model = await tf.loadLayersModel('https://raw.githubusercontent.com/ionutale/image-object-detection/main/public/model2/model.json');
+        const model = await tf.loadGraphModel('https://raw.githubusercontent.com/ionutale/image-object-detection/main/public/model2/model.json');
         // const model = await mobilenet.load();
+        console.log('Model loaded', model);
         model.summary();
 
-
-        console.log('Model loaded', model);
 
         // const predictions = await model.predict(img).data();
         // console.log(predictions);
