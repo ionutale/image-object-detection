@@ -72,7 +72,13 @@
                                         "mode": "horizontal",
                                         "seed": null,
                                         "layers": [],
-                                        "input_layers": []
+                                        "input_layers": [],
+                                        "output_layers": [],
+                                        "input_names": [],
+                                        "output_names": [],
+                                        "node_count": 0,
+                                        "layers_by_name": {}
+
                                     }
                                 },
                                 {
@@ -88,7 +94,12 @@
                                         "interpolation": "bilinear",
                                         "seed": null,
                                         "layers": [],
-                                        "input_layers": []
+                                        "input_layers": [],
+                                        "output_layers": [],
+                                        "input_names": [],
+                                        "output_names": [],
+                                        "node_count": 0,
+                                        "layers_by_name": {}
 
                                     }
                                 },
@@ -106,7 +117,12 @@
                                         "interpolation": "bilinear",
                                         "seed": null,
                                         "layers": [],
-                                        "input_layers": []
+                                        "input_layers": [],
+                                        "output_layers": [],
+                                        "input_names": [],
+                                        "output_names": [],
+                                        "node_count": 0,
+                                        "layers_by_name": {}
                                     }
                                 }
                             ]
