@@ -72,7 +72,7 @@
                                         "mode": "horizontal",
                                         "seed": null,
                                         "layers": [],
-                                        "input_layers": [],
+                                        "input_layers": []
                                     }
                                 },
                                 {
@@ -88,7 +88,8 @@
                                         "interpolation": "bilinear",
                                         "seed": null,
                                         "layers": [],
-                                        "input_layers": [],
+                                        "input_layers": []
+
                                     }
                                 },
                                 {
@@ -105,7 +106,7 @@
                                         "interpolation": "bilinear",
                                         "seed": null,
                                         "layers": [],
-                                        "input_layers": [],
+                                        "input_layers": []
                                     }
                                 }
                             ]
